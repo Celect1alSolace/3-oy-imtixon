@@ -1,4 +1,83 @@
 .site-footer {
+    padding: 59px 0 29px;
+    background-color: $greenblue-clr;
 }
-.footer {
+.footer__content-wrapper {
+    @include Display($items:start, $space:space-between, $gap:0px);
+    padding-right: 134px;
+}
+.footer__site-logo {
+    display: inline-block;
+}
+.footer__texts-wrapper {
+    @include Display($items:start, $space:start, $gap:25px);
+    flex-direction: column;
+}
+.footer__strong {
+    font-family: Exo-2;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    color: $white-clr;
+}
+.footer__text-link {
+    font-family: Exo-2;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    color: $white-clr;
+}
+.footer__link-wrapper {
+    @include Display($items:start, $space:start, $gap:32px);
+    flex-direction: column;
+}
+.icons-wrapper {
+    @include Display($items:center, $space:start, $gap:14px);
+}
+.footer__phone-link {
+    font-family: Exo-2;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: $white-clr;
+}
+.footer__link {
+    display: inline-block;
+    @include Display($items:center, $space:center, $gap:14px);
+    width: 271px;
+    background-color: #FF9619;
+    border: 2px solid #FF9619;
+    padding: 13px 0;
+    transition: all 0.3s linear;
+    
+    &:hover{
+        background-color: transparent;
+        color: #FF9619;
+    }
+    &:active{
+        box-shadow: 0 0 10px 2px #FF9619;
+    }
+}
+.footer__links-text {
+    font-family: Open-Sans;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    color: $white-clr;
+}
+.footer__date {
+    margin-top: 79px;
+    font-family: Exo-2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    color: $white-clr;
+    text-align: center;
 }
