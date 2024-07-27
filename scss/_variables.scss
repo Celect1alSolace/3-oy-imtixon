@@ -1,10 +1,14 @@
-$white-clr: white;
-$black-clr: #363738;
-$gray-clr: #6B6B6C;
-$yellow-clr: #FFCE50;
-$greenblue-clr: #0B7572;
-
-
-
-
-
+.dark{
+    --white-clr: white;
+    --black-clr: #363738;
+    --gray-clr: #6B6B6C;
+    --yellow-clr: #FFCE50;
+    --greenblue-clr: #0B7572;
+}
+:root {
+    --white-clr: #000;
+    --black-clr: #fff;
+    --gray-clr: #fff;
+    --yellow-clr: #FFCE50;
+    --greenblue-clr: #0B7572;
+}

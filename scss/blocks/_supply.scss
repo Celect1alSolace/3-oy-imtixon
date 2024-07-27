@@ -3,11 +3,11 @@
 }
 .supply__title {
     margin-bottom: 48px;
-    font-family: Exo-2;
+    font-family: 'Exo 2';
     font-size: 48px;
     font-weight: 600;
     line-height: 60px;
-    color: $black-clr;
+    color: var(--black-clr);
 }
 .supply__list {
     @include Display($items:center, $space:center, $gap:24px);
@@ -17,23 +17,23 @@
 .supply__item {
     width: 100%;
     @include Display($items:center, $space:start, $gap:56px);
-    padding: 32px 132px 32px     96px;
+    padding: 32px 132px 32px 96px;
     border-radius: 30px;
     box-shadow: 0px 4px 15px 0px #0000001F;
 }
 .supply__subtitle {
     margin-bottom: 24px;
-    font-family: Exo-2;
+    font-family: 'Exo 2';
     font-size: 20px;
     font-weight: 600;
     line-height: 25px;
-    color: $black-clr;
+    color: var(--black-clr);
 }
 .supply__span {
     display: inline-block;
     width: 86px;
     height: 3px;
-    background-color: $yellow-clr;
+    background-color: var(--yellow-clr);
     border: none;
     margin-bottom: 24px;
 }
@@ -41,14 +41,11 @@
     width: 568px;
 }
 .supply__item-text {
-    font-family: PT Sans;
+    font-family: 'PT Sans';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: $gray-clr;
-}
-.supply__video {
-    
+    color: var(--gray-clr);
 }
 .supply__img{
     display: inline-block;

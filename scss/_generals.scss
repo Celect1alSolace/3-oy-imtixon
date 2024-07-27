@@ -6,6 +6,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 body{
-    background-color: $white-clr;
+    background-color: var(--white-clr);
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
+

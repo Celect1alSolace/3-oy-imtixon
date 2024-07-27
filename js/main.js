@@ -20,5 +20,5 @@ function CloseList(){
 }
 function darkMode(){
     elSun.classList.toggle("right")
-    document.elSun.classList.toggle("dark")
+    document.body.classList.toggle("dark")
 }

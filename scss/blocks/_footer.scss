@@ -22,22 +22,22 @@
     flex-direction: column;
 }
 .footer__strong {
-    font-family: Exo-2;
+    font-family: Exo 2;
     font-size: 13px;
     font-weight: 600;
     line-height: 19.5px;
     letter-spacing: 0.16em;
     text-align: center;
-    color: $white-clr;
+    color: #fff;
 }
 .footer__text-link {
-    font-family: Exo-2;
+    font-family: Exo 2;
     font-size: 13px;
     font-weight: 500;
     line-height: 19.5px;
     letter-spacing: 0.16em;
     text-align: center;
-    color: $white-clr;
+    color: #fff;
     transition: all 0.3s linear;
     
     &:hover{
@@ -55,11 +55,11 @@
     @include Display($items:center, $space:start, $gap:14px);
 }
 .footer__phone-link {
-    font-family: Exo-2;
+    font-family: Exo 2;
     font-size: 13px;
     font-weight: 600;
     line-height: 19.5px;
-    color: $white-clr;
+    color: #fff;
 }
 .footer__link {
     @include Display($items:center, $space:center, $gap:14px);
@@ -68,7 +68,7 @@
     border: 2px solid #FF9619;
     padding: 19px 0;
     transition: all 0.3s linear;
-    color: $white-clr;
+    color: #fff;
     
     &:hover{
         background-color: transparent;
@@ -82,7 +82,7 @@
     }
 }
 .footer__links-text {
-    font-family: Open-Sans;
+    font-family: Open Sans;
     font-size: 13px;
     font-weight: 600;
     line-height: 19.5px;
@@ -97,7 +97,7 @@
     line-height: 18px;
     letter-spacing: 0.16em;
     text-align: center;
-    color: $white-clr;
+    color: #fff;
     margin-top: 79px;
 }
 

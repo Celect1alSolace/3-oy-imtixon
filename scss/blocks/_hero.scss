@@ -13,7 +13,7 @@
     font-size: 52px;
     font-weight: 600;
     line-height: 65px;
-    color: $black-clr;
+    color: var(--black-clr);
 }
 .hero__text-wrapper {
     width: 525px;
@@ -24,23 +24,23 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: $gray-clr;
+    color: var(--gray-clr);
 }
 .hero__clear{
     display: inline-block;
 }
 .hero__link {
     background-color: transparent;
-    border-bottom: 3px solid $yellow-clr;
+    border-bottom: 3px solid var(--yellow-clr);
     font-family: PT-Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: $black-clr;
+    color: var(--black-clr);
 }
 .hero__list {
     @include Display($items:center, $space:space-between, $gap:0px);
-    background-color: $white-clr;
+    background-color: var(--white-clr);
     box-shadow: 0px 4px 20px 0px #00000026;
     border-radius: 30px;
     margin-top: 67px;
@@ -71,7 +71,7 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 27px;
-    color: $black-clr;
+    color: var(--black-clr);
 }
 .hero__item-text-wrapper{
     width: 225px;
@@ -81,7 +81,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: $gray-clr;
+    color: var(--gray-clr);
 }
 // Responsive Start
 // Tablet Start
@@ -132,7 +132,7 @@
     .hero__item {
         @include Display($items:center, $space:start, $gap:32px);
         padding: 32px 0 40px 32px;
-        background-color: $white-clr;
+        background-color: var(--white-clr);
         border-radius: 30px;
         box-shadow: 0px 4px 20px 0px #00000026; 
     }
@@ -192,7 +192,7 @@
     .hero__list {
         @include Display($items:center, $space:start, $gap:24px);
         flex-direction: column;
-        background-color: $white-clr;
+        background-color: var(--white-clr);
         border-radius: 30px;
         margin-top: 56px;
         padding: 24px 0 32px;
