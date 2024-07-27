@@ -11,9 +11,35 @@
     <title>Truck</title>
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header">
+            <button onclick="handleMenuIconOpen()" class="open-icon mr-[5px]">
+                <img src="./images/menu-icon.svg" alt="Menu Icon Svg" width="40" height="40">
+            </button>
+            <button onclick="handleMenuIconClose()" class="close-icon mr-[15px]"><img src="./images/close-icon.svg" alt="hamburger Icon" width="20" height="20"></button>
+            <button onclick="darkMode()" class="dark-wrapper">
+                <div class="dark-item"></div>
+            </button>
+        </div>
+    </header>
+    <ul class="modal">
+        <li class="modal__item">
+            <a onclick="CloseList()" class="modal__text-link" href="#hero">Поставщик</a>
+        </li>
+        <li class="modal__item">
+            <a onclick="CloseList()" class="modal__text-link" href="#work">Работа</a>
+        </li>
+        <li class="modal__item">
+            <a onclick="CloseList()" class="modal__text-link" href="#supply">Поставки</a>
+        </li>
+        <li class="modal__item">
+            <a onclick="CloseList()" class="modal__text-link" href="#footer">Вопросы</a>
+        </li>
+    </ul> 
+    
     <main class="site-main">
         <!-- Hero Section Start -->
-        <section class="hero-section">
+        <section class="hero-section" id="hero">
             <div class="container hero">
                 <div class="hero__content-wrapper">
                     <div>
@@ -72,7 +98,7 @@
         </section>
         <!-- Hero Section End -->
         <!-- Benefit Scetion Start -->
-        <section class="benefit-section">
+        <section class="benefit-section" id="benefit">
             <div class="container benefit">
                 <p class="benefit__img-text">Почему c нами выгоднее?</p>
                 <img class="benefit__img" src="./images/benefit-bg1.png" alt="Benefit Img" width="769" height="453">
@@ -118,7 +144,7 @@
         </section>  
         <!-- Benefit Scetion End -->
         <!-- Work Section Start -->
-        <section class="work__section">
+        <section class="work__section" id="work">
             <div class="container work">
                 <h2 class="work__title">Выполненные работы</h2>
                 <div class="work__text-wrapper">
@@ -163,7 +189,7 @@
         </section> 
         <!-- Work Section End -->
         <!-- Supply Section Start -->
-        <section class="supply-section">
+        <section class="supply-section" id="supply">
             <div class="container suply">
                 <div class="supply__del">
                     <h2 class="supply__title">Этапы поставки</h2>
@@ -208,7 +234,7 @@
         <!-- Supply Section End -->
     </main>
     <!-- Footer Start -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
         <div class="container footer">
             <div class="footer__content-wrapper">
                 <a class="footer__logo-wrapper" href="#"><svg class="footer__site-logo" width="171" height="41" viewBox="0 0 171 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,5 +277,6 @@
 </div>
 </footer> 
 <!-- Footer End -->
+<script src="js/main.js"></script>
 </body>
 </html>

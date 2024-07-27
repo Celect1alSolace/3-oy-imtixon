@@ -53,6 +53,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -75,6 +76,109 @@
   padding: 0 20px;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.open-icon {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+}
+
+.modal {
+  transform: scale(0);
+}
+
+.dark-wrapper {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../images/sun-icon.svg), url(../images/moon-icon.svg);
+  background-size: 35px 20px;
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+  background-color: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0 5px 15px black, inset 0px -5px 15px gray;
+  cursor: pointer;
+  border: none;
+}
+
+.dark-item {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  left: 5px;
+  top: 7px;
+  transition: all 0.3s;
+}
+
+.right {
+  left: 40px;
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+@media (max-width: 690px) {
+  .open-icon {
+    position: absolute;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    left: 5px;
+    top: 5px;
+  }
+  .close-icon {
+    position: absolute;
+    display: none;
+    border: none;
+    background-color: transparent;
+    left: 15px;
+    top: 15px;
+  }
+  .modal__text-link {
+    font-family: Open-Sans;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: #363738;
+  }
+  .modal {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 60%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 0;
+    background-color: rgb(227, 222, 222);
+    border-radius: 5px;
+    transform: scale(0);
+    transition: all 0.3s;
+  }
+  .show {
+    transform: scale(1);
+  }
+  .hide {
+    transform: scale(0);
+  }
+  .close-show {
+    display: inline-block;
+  }
+}
 .hero-section {
   padding: 109px 0 67px;
 }
